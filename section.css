@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+}
+
+.topnav {
+    position: sticky;   /* makes it stick */
+    top: 0;  
+    padding: 10px 30px; 
+    display: flex;
+    justify-content: space-between;
+    
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 4px 6px 4px #000000;
+}
+.topnav a:hover {
+    color: black
+}
+
+section {
+    min-height: 100vh;      /* Each section fills at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center;     /* Horizontally center content */
+    padding: 40px 20px;
+    margin: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+section:not(:last-child) {
+    margin-bottom: 0;
+}
+
+/* style for top navigation bar */
+.homenav{
+    position: sticky;   /* makes it stick */
+    top: 0;  
+    padding: 10px 0px; 
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.homenav a {
+    float: left;
+    display: block;
+    color: lightyellow;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 4px 2px 4px #000000;/* makes the background of the links lighter */
+}
+.homenav a:hover {
+    color: black
+}
+.homenav a.active {
+    color: black;
+    text-shadow: 1px 6px 10px #000000;
+
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+a {
+    color: white; /* Yellow color for links */
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    list-style-type: none; /* Remove default bullet points */
+}
+
+h1 {
+    font-size: 120px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: -10px;
+}
+h2 {
+    font-size: 50px;
+    text-align: left;
+    font-family: Avenir Next, sans-serif;
+    font-weight: bold;
+    margin: -10px;
+
+}
+h3 {
+    font-size: 18px;
+    text-align:left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bigbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.smallbox {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.projectbigbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 0; /* Remove extra space above the project list */
+    padding-top: 0;
+    justify-content: center;
+    margin-top: 30px;
+}
+.projectsmallbox {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    max-width: 40%;
+    max-height: 40%;
+}
+.project-image {
+    max-width: 300px;
+    max-height: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 20px;
+}   
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:focus {
+  background-color: #492090;
+}
+
+.resume {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 4px 38px black;
+    justify-self: center;
+    max-width: 900px;
+}
+
+
+span.name { 
+    color: #ffcd00; /* Yellow color for the name */
+    font-weight: bold;
+}
+
+#home {
+    background-color: white; /* Light blue */
+
+}
+
+#about {
+    background-color: #00843D; /* Light orange */
+}
+
+#projects {
+    background-color: #ffcd00; /* Light green */
+}
+
+#contact {
+    background-color: white; /* Light red/pink */
+}
+
+#about.html a{
+    color: black; /* Black color for links in about section */
+}
+html {
+    scroll-behavior: smooth;
+}
