@@ -16,11 +16,11 @@
       <div class="bigbox">
         <div class="smallbox">
           <h2>Hey! I'm</h2>
-          <h1>Rabia</h1>
+          <h1>Farah</h1>
           <h3>Engineer passionate in Programming</h3>
         </div>
         <div class="smallbox">
-          <img src="all-image/my.png" alt="Profile Picture" style="width: auto; height:auto; max-width: 70%; max-height: 70%;">
+          <img src="all-image/my.png" alt="Profile Picture" style="width: auto; height:auto;">
         </div>
       </div>
         </section>
@@ -31,8 +31,8 @@
           <h2 style="text-align: center;font-size: 30px;">About Me</h2>
           <br>
           <br>
-          <h1 style="text-align:center;font-size: 50px;color: white;">Who is <span class="name">Rabia?</span></h1>
-          <h3 style="text-align:center;color:whitesmoke;font-weight: lighter;">I'm Rabi'atulAdawiyah, I'm someone who truly enjoys engineering, especially when it comes to programming. My journey in programming began during my Bachelor’s degree, and it has grown into a passion ever since. I currently have experience in Python, C, and MATLAB, and I'm now expanding my knowledge by self-learning Java. I find joy in exploring how code can bring ideas to life and make everyday tasks more efficient and meaningful.</h3>
+          <h1 style="text-align:center;font-size: 50px;color: white;">Who is <span class="name">Farah?</span></h1>
+          <h3 style="text-align:center;color:whitesmoke;font-weight: lighter;">This paragraph is where you briefly describe yourself — your background, interests, and what excites you in your field. It doesn’t need to be too detailed, just enough to give people a quick idea of who you are.</h3>
           <button onclick="window.location.href='about.html'">View my resume...</button>
         </div>
     </section>
@@ -73,35 +73,19 @@
       <br>
       <h2>Contact Me</h2>
       <div class="bigbox">
-        <div class="smallbox" style="text-align:left;background-color: #ffcd00;">
-            <form action="https://script.google.com/macros/s/AKfycbzyBw9QgtMaplN0ZGIomLYAHBkibxcXp6jGqVXsDnKMgxLEXvYvVYYLmP80JSuYHQ4/exec" method="post" id="contactForm">
-                <label for="fname">Name:</label><br>
-                <input type="text" id="name" name="Name" placeholder="Your name"><br>
-
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="Email" placeholder="Your name"><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="Message" rows="2" placeholder="Write your message here..."></textarea><br>
-                
-                <input type="submit" value="Submit">
-            
-                <p>Wait a few second after click submit. Thank you</p>
-            </form>
-        </div>
-        <div class="smallbox" style="text-align:left;background-color: #00834d;color:#ffcd00;">
-            <p>You also can find me here:</p>
+        <div class="smallbox" style="width: 80vh;text-align:left;background-color: #00834d;color:#ffcd00;"> 
+          <p>You can find me here:</p>
             <img src="all-image/linkeidn.png" alt="LinkedIn" style="width:40px;height:40px;float:left;border-radius: 50%;">
-            <li><a href="https://www.linkedin.com/in/rabia2698/">My Linkedin</a></li>
+            <li><a href="https://www.linkedin.com/in/username/">My Linkedin</a></li>
             <br>
             <img src="all-image/github.png" alt="Github" style="width:40px;height:40px;float:left;border-radius: 50%;">
-            <li><a href="https://github.com/Rabia2698">My Github</a></li>
+            <li><a href="https://github.com/username">My Github</a></li>
             <br>
             <img src="all-image/email.jpg" alt="Email" style="width:40px;height:40px;float:left;border-radius: 50%;">
             <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=name@gmail.com">Email Me</a></li>
             <br>
             <p>Email: name@gmail.com<br>Phone: +62 812-3456-7890</p>
-</div>  
+        </div>  
       </div>
     </section>
 
@@ -111,30 +95,3 @@
         <p style="font-size: 15px;text-align: center;">&copy; Rabia2698</p>
     </footer>
 </body>
-
-<script>
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".homenav a");
-
-const options = {
-  threshold: 0.4
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(link => {
-        link.classList.toggle(
-          "active",
-          link.getAttribute("href") === "#" + entry.target.id
-        );
-      });
-    }
-  });
-}, options);
-
-sections.forEach(section => {
-  observer.observe(section);
-});
-</script>
-<!-- ...existing code... -->
