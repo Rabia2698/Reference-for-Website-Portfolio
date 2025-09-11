@@ -9,3 +9,5 @@ It serves as a reference for structuring and styling a simple portfolio.
   - **About Me** – personal details and a page to view Resume
   - **Projects** – showcase projects with dedicated pages to learn more
   - **Contact** – ways to connect and get in touch
+
+<img src="demo.gif">
