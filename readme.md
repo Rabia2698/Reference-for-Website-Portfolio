@@ -10,4 +10,6 @@ It serves as a reference for structuring and styling a simple portfolio.
   - **Projects** – showcase projects with dedicated pages to learn more
   - **Contact** – ways to connect and get in touch
 
+Simple demo below: 
+
 <img src="demo.gif">
